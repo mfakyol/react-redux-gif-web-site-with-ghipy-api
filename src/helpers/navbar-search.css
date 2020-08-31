@@ -1,0 +1,16 @@
+.search {
+    padding-top: 18px;
+    float: right;
+}
+
+#search-input {
+    height: 28px;
+    outline: none;
+    text-indent:5px;
+}
+
+#search-button {
+    padding: 0 15px;
+    margin-left: 10px;
+    height: 30px;
+}

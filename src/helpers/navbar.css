@@ -1,0 +1,43 @@
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    background-color: #292b2c;
+    color: white;
+
+}
+
+.nav {
+    background-color: #292b2c;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    height: 66px;
+}
+
+.nav-brand {
+    font-size: 26px;
+    display: inline-block; 
+}
+
+.nav-items {
+    margin-left: 15px;
+}
+
+.nav-item {
+    font-weight: 600;
+    padding: 23px;
+    display: inline-block;
+    border-radius: 2px;
+
+}
+
+.nav-item:hover {
+    background-color: #f0f0f0;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #292b2c;
+}
+
+
+

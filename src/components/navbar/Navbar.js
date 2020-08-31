@@ -13,8 +13,8 @@ class Navbar extends Component {
   render() {
     return (
 
-        <div className="navbar">
-          <nav className="nav clearfix">
+        <div className="navbar clearfix">
+          <nav className="nav">
             <h1 className="nav-brand">Gif Website</h1>
             <ul className="nav-items">
               <li className="nav-item">Trending</li>

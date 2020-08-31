@@ -5,7 +5,7 @@
 .dropdown .dropdown-content {
 
     border: 1px #292b2c solid;
-    min-width: 362px;
+    min-width: 722px;
     background-color: #292b2c;
     position: absolute;
     top: 100%;
@@ -14,7 +14,7 @@
     border-radius: 2px;
 }
 .dropdown .dropdown-item{
-    width: 120px;
+    width: 180px;
     text-align: center;
     display: inline-block;
     padding: 10px;

@@ -8,8 +8,8 @@ import Detail from "./components/Detail";
  function App(props) {
   return (
     <div className="App">
-      <Navbar/>
       <Router>
+      <Navbar/>
         <Route path="/" exact component={Home} />
         <Route path="/detail/:id" exact component={Detail} />
       </Router>

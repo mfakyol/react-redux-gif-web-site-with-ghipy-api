@@ -21,10 +21,13 @@
 .nav-brand {
     font-size: 26px;
     display: inline-block; 
+    color: white;
+    font-weight: 700;
 }
 
 .nav-items {
     margin-left: 15px;
+    
 }
 
 .nav-item {
@@ -32,7 +35,7 @@
     padding: 23px;
     display: inline-block;
     border-radius: 2px;
-
+    color: white;
 }
 
 .nav-item:hover {

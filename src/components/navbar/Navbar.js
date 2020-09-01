@@ -4,6 +4,7 @@ import NavbarDropDown from "./NavbarDropDown";
 import NavbarSearch from "./NavbarSearch";
 import { connect } from "react-redux";
 import {getCategories} from '../../redux/actions/categories-action'
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   componentDidMount() {
@@ -12,12 +13,11 @@ class Navbar extends Component {
 
   render() {
     return (
-
         <div className="navbar clearfix">
           <nav className="nav">
-            <h1 className="nav-brand">Gif Website</h1>
+            <Link to="/" className="nav-brand">Gif Website</Link>
             <ul className="nav-items">
-              <li className="nav-item">Trending</li>
+              <Link to="/" className="nav-item">Trending</Link>
               <NavbarDropDown data= {this.props.categories}/>
               <li className="nav-item">Random</li>
               <li className="nav-item">Github</li>

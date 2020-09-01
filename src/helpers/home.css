@@ -19,6 +19,7 @@
   color: purple;
   position: sticky;
   top: 70px;
+  text-transform: capitalize;
 }
 
 .gif-container {

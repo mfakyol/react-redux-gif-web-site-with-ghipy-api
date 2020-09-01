@@ -2,9 +2,13 @@ import {combineReducers} from 'redux';
 import categories from './categoriesReducer'
 import trending from './trendingReducer'
 import detail from './detailReducer'
+import randomId from './randomIdReducer'
+import gifsByCategory from './gifsByCategory'
 
 export default combineReducers({
     categories,
     trending,
-    detail
+    detail,
+    randomId,
+    gifsByCategory
   })

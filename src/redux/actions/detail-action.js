@@ -1,4 +1,4 @@
-import {  GET_DETAIL } from "./types";
+import {  GET_DETAIL, CLEAR_DETAIL } from "./types";
 import Axios from "axios";
 const apiKey = "cWPV5mekjIG1yyRo8RKTN2WpgzEL7EUZ";
 
@@ -7,6 +7,14 @@ export function updateDetail(detail) {
       type: GET_DETAIL,
       payload: {
         detail
+      },
+    };
+  }
+export function clearDetail() {
+    return {
+      type: CLEAR_DETAIL,
+      payload: {
+        detail: {}
       },
     };
   }

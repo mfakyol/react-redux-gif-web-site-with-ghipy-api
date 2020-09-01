@@ -1,5 +1,6 @@
 import React from "react";
 import "../../helpers/navbar-dropdown.css";
+import { Link } from "react-router-dom";
 
 export default function NavbarDropDown(props) {
   return (
@@ -9,9 +10,9 @@ export default function NavbarDropDown(props) {
         {props.data
           ? props.data.map((content) => {
               return (
-                <span className="dropdown-item" key={content}>
+                <Link to={`/category/${content}`} className="dropdown-item" key={content}>
                   {content}
-                </span>
+                </Link>
               );
             })
           : null}

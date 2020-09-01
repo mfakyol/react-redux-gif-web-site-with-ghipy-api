@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import {getDetail} from '../redux/actions/detail-action'
+import {getDetail, clearDetail} from '../redux/actions/detail-action'
 import '../helpers/detail.css'
 
  class Detail extends Component {
     componentDidMount(){
         this.props.onGetDetail(this.props.match.params.id)
+    }
+
+    componentWillUnmount(){
+        this.props.onClearDetail();
     }
 
     state = {
@@ -56,7 +60,8 @@ const mapStateToProps = (state) => {
   };
   
   const mapDispatchToProps = {
-    onGetDetail: getDetail
+    onGetDetail: getDetail,
+    onClearDetail: clearDetail,
   };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Detail)

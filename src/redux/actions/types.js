@@ -1,3 +1,6 @@
 export const GET_CATEGORİES = 'GET_CATEGORİES';
 export const GET_TRENDING = 'GET_TRENDING';
 export const GET_DETAIL = 'GET_DETAIL';
+export const CLEAR_DETAIL = 'CLEAR_DETAIL';
+export const GET_RANDOMID = 'GET_RANDOMID';
+export const GET_GIFSBYCATEGORY = 'GET_GIFSBYCATEGORY';

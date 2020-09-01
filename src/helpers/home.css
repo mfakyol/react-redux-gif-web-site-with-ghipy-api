@@ -1,49 +1,69 @@
 .home-container {
-    width: 100%;
-    margin-top: 66px;
+  width: 100%;
+  margin-top: 66px;
 }
 
 .gifs {
-    margin: 0 auto;
-    max-width: 1600px;
-    background-color: #f0f0f0;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: rgba(255, 0, 0, 0.5);
-    margin-top: 10px;
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  padding: 10px;
+  background-image: linear-gradient(to right, orange, rgba(255, 0, 0, 0.5));
+  margin-top: 10px;
 }
 
 .trending-header {
-    margin: 0 10px;
-    padding: 0 10px;
-    background-image: linear-gradient(to right, orange, rgba(255, 0, 0, 0.5));
-    color: purple;
+  padding: 0 10px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), orange);
+  color: purple;
+  position: sticky;
+  top: 70px;
 }
 
 .gif-container {
-    padding: 10px;
-    text-align: center;
-    width: 33.3%;
-    max-height: 340px;
-    display: inline-block;
-    border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 33.3%;
+  max-height: 340px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .gif-container .gif-title {
-    margin-left: 2px;
-    margin-right: 2px;
-    font-weight: 600;
-    font-size: 12px;
-    display: block;
-    background-color: rgba(255, 0, 0, 0.5);
-    color: white;
-    padding: 2px;
-    border-radius: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  padding: 2px;
+  border-radius: 15px;
 }
 
-img {
-    margin: 0 auto;
-    height: 300px;
-    max-width: 100%;
-    border-radius: 4px;
+.gif-container img {
+  margin: 0 auto;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 900px) {
+  .gif-container {
+    width: 50%;
+  }
+
+  .trending-header{
+    position: static;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gif-container {
+    width: 100%;
+  }
+  .trending-header{
+    position: static;
+  }
 }

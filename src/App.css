@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+
+
+body {
+  background-image:  linear-gradient(to bottom right, red, yellow);
+  background-attachment: fixed;
+}
 ul{
   list-style: none;
   display: inline-block;

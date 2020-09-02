@@ -20,7 +20,7 @@ class Navbar extends Component {
               <Link to="/" className="nav-item">Trending</Link>
               <NavbarDropDown data= {this.props.categories}/>
               <Link to="/random" className="nav-item">Random</Link>
-              <li className="nav-item">Github</li>
+              <a target="_blank" href="https://github.com/mfakyol" className="nav-item">Github</a>
             </ul>
             <NavbarSearch />
           </nav>

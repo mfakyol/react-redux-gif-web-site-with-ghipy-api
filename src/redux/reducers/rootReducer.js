@@ -3,7 +3,7 @@ import categories from './categoriesReducer'
 import trending from './trendingReducer'
 import detail from './detailReducer'
 import randomId from './randomIdReducer'
-import gifsByCategory from './gifsByCategory'
+import gifsByCategory from './gifsByCategoryReducer'
 
 export default combineReducers({
     categories,

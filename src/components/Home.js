@@ -1,19 +1,47 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getTrending } from "../redux/actions/trending-action";
+import { getTrending} from "../redux/actions/trending-action";
 import "../helpers/home.css";
 import { Link } from "react-router-dom";
 
 class Home extends Component {
-  async componentDidMount() {
-    await this.props.ongetTrending(0, 20);
-  }
 
+  scrollEvent = async () => {
+
+    if (
+      window.pageYOffset ===
+      document.documentElement.scrollHeight -
+        document.documentElement.clientHeight
+    ) {
+      const offset = this.props.trending.length;
+      await this.props.ongetTrending(
+        offset,
+        25,
+        this.props.match.params.category
+      );
+    }
+  };
+
+  async componentDidMount() {
+    const offset = this.props.trending.length;
+    if (offset === 0) {
+      await this.props.ongetTrending(
+        offset,
+        25,
+        this.props.match.params.category
+      );
+    }
+    window.addEventListener("scroll", this.scrollEvent,false);
+  }
+ 
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.scrollEvent,false); 
+  }
   render() {
     return (
       <div className="home-container">
         <div className="gifs">
-          <h1 className="trending-header">#Trending</h1>
+    <h1 className="trending-header">#Trending</h1>
           {this.props.trending.length > 0
             ? this.props.trending.map((gif) => {
                 return (
